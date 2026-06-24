@@ -21,5 +21,15 @@ public class ex1 {
         } else {
             System.out.println("Senha incorreta.");
         }
+
+        String nome = "João";
+        int idade = 18;
+        double patrimonio = 1.3333;
+
+        System.out.println(String.format("Olá! Meu nome é %s, tenho %d anos e meu patrimônio é R$%.2f mil.", nome, idade, patrimonio));
+
+        int classificacao;
+        classificacao = (int) (media / 2);
+        System.out.println(classificacao);
     }
 }
