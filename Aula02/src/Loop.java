@@ -12,7 +12,9 @@ public class Loop {
             mediaAvaliacao += notaFilme;
         }
         System.out.printf("Média das avaliações: %.2f", mediaAvaliacao/3);
-
-
+        int d;
+        for (d = 0; d < 6; d++){
+            System.out.println(d);
+        }
     }
 }
