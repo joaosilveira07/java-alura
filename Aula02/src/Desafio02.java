@@ -27,14 +27,17 @@ public class Desafio02 {
         System.out.printf("Saldo inicial: %.2f %n", saldo);
         System.out.println("\n=================================\n");
 
+        String menu = """
+                ======================
+                1. Consultar saldo.
+                2. Receber valor.
+                3. Transferir valor.
+                4. Sair.
+                ======================
+                Escolha uma opção:
+                """;
         while (opcaoUsuario != 4){
-            System.out.println("==========================");
-            System.out.println("1. Consultar saldo.");
-            System.out.println("2. Receber valor.");
-            System.out.println("3. Transferir valor.");
-            System.out.println("4. Sair.");
-            System.out.println("==========================");
-            System.out.println("Escolha uma opção: ");
+            System.out.println(menu);
             opcaoUsuario = sc.nextInt();
 
             if (opcaoUsuario == 4) {
