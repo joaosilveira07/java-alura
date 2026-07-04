@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+        // -* Aula *-
         Filme filme1 = new Filme();
         filme1.titulo = "Vingadores: Ultimato";
         filme1.anoLancamento = 2019;
@@ -13,6 +14,7 @@ public class Main {
         System.out.println(filme1.totalAvaliacoes);
         System.out.printf("Média das avaliações do filme: %.2f %n", filme1.obterMediaAvaliacoes());
 
+        // *- Desafio03 -*
         Desafio03Musica musica1 = new Desafio03Musica();
         musica1.artista = "Luan Santana";
         musica1.titulo = "Meteoro da Paixão";
@@ -25,6 +27,7 @@ public class Main {
         double mediaMusica = musica1.calculaMediaAvaliacoes();
         System.out.printf("A média das avaliações é: %.2f%n", mediaMusica);
 
+        // *- Desafio04 -*
         Desafio04Carro carro1 = new Desafio04Carro();
         carro1.ano = 2007;
         carro1.modelo = "Celta";
@@ -34,6 +37,7 @@ public class Main {
         int idadeCarro = carro1.calculaIdade(2026);
         System.out.printf("A idade atual do Carro é: %d%n", idadeCarro);
 
+        // *- Desafio05 -*
         Desafio05Aluno aluno1 = new Desafio05Aluno();
         aluno1.nome = "João";
         aluno1.idade = 18;
