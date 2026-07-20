@@ -38,9 +38,9 @@ public class Main {
 
         // -* Aula *-
         Filme filme1 = new Filme();
-        filme1.titulo = "Vingadores: Ultimato";
-        filme1.anoLancamento = 2019;
-        filme1.duracaoMinutos = 152;
+        filme1.setTitulo("Vingadores: Ultimato");
+        filme1.setAnoLancamento(2019);
+        filme1.setDuracaoMinutos(152);
 
         filme1.exibeFichaTecnica();
         filme1.avaliar(8);
