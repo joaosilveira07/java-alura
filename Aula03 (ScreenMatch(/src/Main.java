@@ -1,18 +1,10 @@
+import alura.aula.javaPOO.aula3.modelos.Desafio03Musica;
+import alura.aula.javaPOO.aula3.modelos.Desafio04Carro;
+import alura.aula.javaPOO.aula3.modelos.Desafio05Aluno;
+import alura.aula.javaPOO.aula3.modelos.Filme;
+
 public class Main {
     public static void main(String[] args) {
-        // -* Aula *-
-        Filme filme1 = new Filme();
-        filme1.titulo = "Vingadores: Ultimato";
-        filme1.anoLancamento = 2019;
-        filme1.duracaoMinutos = 152;
-
-        filme1.exibeFichaTecnica();
-        filme1.avaliar(8);
-        filme1.avaliar(5.3);
-        filme1.avaliar(7.5);
-        System.out.println(filme1.somaAvaliacoes);
-        System.out.println(filme1.totalAvaliacoes);
-        System.out.printf("Média das avaliações do filme: %.2f %n", filme1.obterMediaAvaliacoes());
 
         // *- Desafio03 -*
         Desafio03Musica musica1 = new Desafio03Musica();
@@ -42,5 +34,22 @@ public class Main {
         aluno1.nome = "João";
         aluno1.idade = 18;
         aluno1.exibeInfos();
+
+
+        // -* Aula *-
+        Filme filme1 = new Filme();
+        filme1.titulo = "Vingadores: Ultimato";
+        filme1.anoLancamento = 2019;
+        filme1.duracaoMinutos = 152;
+
+        filme1.exibeFichaTecnica();
+        filme1.avaliar(8);
+        filme1.avaliar(5.3);
+        filme1.avaliar(7.5);
+        System.out.println("Total de avaliações: " + filme1.getTotalAvaliacoes());
+        System.out.printf("Média das avaliações do filme: %.2f %n", filme1.obterMediaAvaliacoes());
+        // filme1.somaAvaliacoes = 10; ISTO NÃO PODE OCORRER
+        // filme1.totalAvaliacoes = 1; ISTO NÃO PODE OCORRER
+        // System.out.println(filme1.obterMediaAvaliacoes());
     }
 }

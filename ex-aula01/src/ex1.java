@@ -2,16 +2,16 @@ public class ex1 {
     public static void main(String[] args) {
         int anoLancamento = 2009;
         System.out.println("Esse é o ScreenMatch");
-        System.out.println("Filme: 'Bolt: O Supercão' (" + anoLancamento + ")");
+        System.out.println("alura.aula.javaPOO.aula3.modelos.Filme: 'Bolt: O Supercão' (" + anoLancamento + ")");
         boolean incluidoNoPlano = true;
         double notaFilme = 7.2;
 
         double media = (7.2 + 8.5) / 2;
         System.out.println(media);
-        String sinopse = "Filme do supercão";
+        String sinopse = "alura.aula.javaPOO.aula3.modelos.Filme do supercão";
         System.out.println("""
-                Filme: 'Bolt: O Supercão'
-                Filme do supercão
+                alura.aula.javaPOO.aula3.modelos.Filme: 'Bolt: O Supercão'
+                alura.aula.javaPOO.aula3.modelos.Filme do supercão
                 Ano de Lançamento:
                 """ + anoLancamento);
 
