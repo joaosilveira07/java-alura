@@ -2,6 +2,7 @@ import alura.aula.javaPOO.aula3.modelos.Desafio03Musica;
 import alura.aula.javaPOO.aula3.modelos.Desafio04Carro;
 import alura.aula.javaPOO.aula3.modelos.Desafio05Aluno;
 import alura.aula.javaPOO.aula3.modelos.Filme;
+import alura.aula.javaPOO.aula3.modelos.Series;
 
 public class Main {
     public static void main(String[] args) {
@@ -51,5 +52,17 @@ public class Main {
         // filme1.somaAvaliacoes = 10; ISTO NÃO PODE OCORRER
         // filme1.totalAvaliacoes = 1; ISTO NÃO PODE OCORRER
         // System.out.println(filme1.obterMediaAvaliacoes());
+        System.out.printf("Duração do filme: %d %n", filme1.getDuracaoMinutos());
+
+        // -* Continuação da Aula *-
+        Series lost = new Series();
+        lost.setTitulo("Lost");
+        lost.setAnoLancamento(2001);
+        lost.exibeFichaTecnica();
+        lost.setTemporadas(10);
+        lost.setEpisodiosPorTemporada(12);
+        lost.setMinutosPorEpisodio(50);
+        System.out.printf("Duração para maratonar: %d %n", lost.getDuracaoMinutos());
+
     }
 }
