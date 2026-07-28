@@ -1,3 +1,4 @@
+import alura.aula.javaPOO.aula3.calculos.CalculadoraDeTempo;
 import alura.aula.javaPOO.aula3.modelos.Desafio03Musica;
 import alura.aula.javaPOO.aula3.modelos.Desafio04Carro;
 import alura.aula.javaPOO.aula3.modelos.Desafio05Aluno;
@@ -62,7 +63,18 @@ public class Main {
         lost.setTemporadas(10);
         lost.setEpisodiosPorTemporada(12);
         lost.setMinutosPorEpisodio(50);
-        System.out.printf("Duração para maratonar: %d %n", lost.getDuracaoMinutos());
+        System.out.printf("Duração para maratonar %s: %d %n", lost.getTitulo(), lost.getDuracaoMinutos());
+
+        Filme filme2 = new Filme();
+        filme2.setTitulo("Bob Esponja");
+        filme2.setAnoLancamento(2016);
+        filme2.setDuracaoMinutos(98);
+
+        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+        calculadora.inclui(filme1);
+        calculadora.inclui(filme2);
+        System.out.println(calculadora.getTempoTotal());
+
 
     }
 }
