@@ -75,6 +75,6 @@ public class Main {
         calculadora.inclui(filme2);
         System.out.println(calculadora.getTempoTotal());
 
-
+        
     }
 }
