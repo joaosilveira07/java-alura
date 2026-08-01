@@ -1,9 +1,6 @@
 import alura.aula.javaPOO.aula3.calculos.CalculadoraDeTempo;
-import alura.aula.javaPOO.aula3.modelos.Desafio03Musica;
-import alura.aula.javaPOO.aula3.modelos.Desafio04Carro;
-import alura.aula.javaPOO.aula3.modelos.Desafio05Aluno;
-import alura.aula.javaPOO.aula3.modelos.Filme;
-import alura.aula.javaPOO.aula3.modelos.Series;
+import alura.aula.javaPOO.aula3.calculos.FiltroRecomendacao;
+import alura.aula.javaPOO.aula3.modelos.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -75,6 +72,13 @@ public class Main {
         calculadora.inclui(filme2);
         System.out.println(calculadora.getTempoTotal());
 
-        
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+        filtro.filtra(filme1);
+
+        Episodio ep = new Episodio();
+        ep.setNumero(1);
+        ep.setSerie(lost);
+        ep.setTotalVisualizacoes(350);
+        filtro.filtra(ep);
     }
 }
