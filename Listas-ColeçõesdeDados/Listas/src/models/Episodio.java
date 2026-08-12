@@ -3,7 +3,7 @@ package models;
 import calculos.Classificavel;
 
 public class Episodio implements Classificavel{
-        private int numero;
+    private int numero;
     private String nome;
     private Serie serie;
     private int totalVisualizacoes;
