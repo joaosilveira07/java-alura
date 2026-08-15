@@ -2,16 +2,6 @@ package main;
 import calculos.CalculadoraDeTempo;
 import calculos.FiltroRecomendacao;
 import java.util.ArrayList;
-
-import Desafios_Aula02.Produto;
-import Desafios_Aula02.ProdutoPerecivel;
-import Desafios_Aula03.Animal;
-import Desafios_Aula03.Cachorro;
-import Desafios_Aula03.Circulo;
-import Desafios_Aula03.ContaBancaria;
-import Desafios_Aula03.Produtos;
-import Desafios_Aula03.Quadrado;
-import Desafios_Aula03.Forma;
 import models.Episodio;
 import models.Filme;
 import models.Serie;
