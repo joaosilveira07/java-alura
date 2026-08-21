@@ -7,7 +7,7 @@ public class Audio {
     private int totalCurtidas;
     private int classificacao;
 
-    public void curtir() {
+    public void curtir(){
         this.totalCurtidas += 1;
     }
 
@@ -33,10 +33,6 @@ public class Audio {
 
     public int getCurtidas(){
         return this.totalCurtidas;
-    }
-
-    public int getClassificacao(){
-        return this.classificacao;
     }
 
 }
